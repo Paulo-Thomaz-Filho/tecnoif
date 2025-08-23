@@ -1,0 +1,364 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #030116;
+}
+
+nav {
+    background-color: #1A182B;
+}
+
+p {
+    color:   white;
+    font-size: xx-large;
+}
+
+button {
+    color: white;
+}
+
+hr {
+    margin: 0 10%;
+}
+
+footer {
+    background-color: #211c5a;
+}
+
+
+.text-box {
+    display:     block; 
+    max-height:  100px; 
+    overflow-y:  auto; 
+    padding:     5px; 
+    word-wrap:   break-word; 
+    white-space: pre-wrap; 
+    color:    #000;
+}
+
+.texto {
+    font-size:  large;
+    text-align: justify;
+}
+
+.textos {
+    margin: 0 50px;
+    font-size:  large;
+    text-align: justify;
+}
+
+.textolight {
+    font-size:  large;
+    text-align: justify;
+    color:    #000;
+}
+
+.servico span {
+    display: block; 
+    max-height: 160px; 
+    overflow-y: auto; 
+    padding: 5px; 
+    word-wrap: break-word; 
+    white-space: pre-wrap;
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar {
+    display:   flex;
+    position:  fixed;
+    min-width: 100vw;
+    height: 100px;
+}
+
+.card-conteiner {
+    background-color: #191637;
+    color:            rgb(0, 0, 0);
+    padding:            15px;
+    margin:             0;
+    border:             solid 1px rgb(255, 0, 0);
+    background-color: #fff;
+}
+
+.row {
+    margin: 0px;
+}
+
+.title {
+    color: goldenrod;
+}
+
+.card {
+    border-radius:      0px;
+    background-color: #191637;
+}
+
+.gap {
+    margin-top: 4%;
+}
+
+.center {
+    align-items: center;
+    text-align:  center;
+}
+
+.border-conteiner {
+    align-items: center;
+    text-align:  center;
+    border:      solid 1px white;
+    margin:      0 15%;
+}
+
+.container-fluid {
+    max-height: 100px;
+}
+
+.logotexto, .anavlink {
+    color: goldenrod;
+}
+
+.logotexto img {
+    width: 200px;
+    height: auto;
+}
+
+.banner {
+    background-color:  #030116;
+    background-image:    url("../img/fundo.png");
+    background-size:     cover;
+    background-position: center;
+    background-repeat:   no-repeat;
+    min-width:           100vh;
+    min-height:          100vh;
+    display:             flex;
+    align-items:         center;
+    justify-content:     flex-start;
+    padding-left:        5%;
+}
+
+#home {
+    position:        relative;
+    justify-content: center;
+    min-height:      100vh;
+}
+
+/* Quem Somos */
+#quem-somos {
+    position:    relative;
+    min-height:  100vh;
+    background:  linear-gradient(#191637, #030116);
+    padding-top: 10px;
+}
+
+.effect {
+    height: 2px;
+    background-color: goldenrod;
+    border: none;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.col:hover hr {
+    height: 2px;
+    margin: 0 10%;
+    transform: scaleX(1);
+}
+
+/* Equipe */
+#equipe {
+    padding: 50px 0;
+}
+
+.team {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    padding-top:     50px
+}
+
+.card-wrapper {
+    max-width: 1110px;
+    width:     100%;
+    margin:    0 auto;
+    padding:   20px 0;
+    overflow:  hidden;
+}
+
+.card-list {
+    display: flex;
+    padding: 0;
+}
+
+.card-item {
+    max-height: 700px;
+}
+
+.card-list .card-item {
+    list-style:      none;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+}
+
+.card-list .card-item .card-link {
+    user-select:     none;
+    display:         block;
+    background:    #fff;
+    padding:         18px;
+    border-radius:   10px;
+    text-decoration: none;
+    border:          2px solid transparent;
+    box-shadow:      0 10px 10px rgba(255, 255, 255, 0.2);
+    transition:      0.2s ease;
+    width:           300px;
+    min-height: 400px;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: goldenrod;
+}
+
+.card-list .card-link {
+    width:         100%;
+    aspect-ratio:  16/9;
+    object-fit:    cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color:       goldenrod;
+    padding:       8px 16px;
+    margin:        16px 0 18px;
+    background:  #ffffff;
+    font-size:     0.95rem;
+    font-weight:   500;
+    width:         fit-content;
+    border-radius: 50px;
+    border: solid 1px goldenrod;
+}
+
+.card-list .card-link .card-title {
+    font-size:   1.19rem;
+    color:     #000;
+    font-weight: 600;
+}
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height:             13px;
+    width:              13px;
+    opacity:            0.5;
+    background-color: #ffffff;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color:    goldenrod;
+    margin-top: -35px;
+}
+
+.card-description {
+    font-size:   14px;
+    color:     #666;
+    margin-top:  10px;
+    line-height: 1.5;
+}
+
+/*Serviços*/
+#nossos-servicos {
+    position:   relative;
+    min-height: 100vh;
+    background: linear-gradient(#030116, #191637);
+    padding:    50px 0;
+}
+
+.alinhamento-card {
+    align-items:     center;
+    justify-content: space-between;
+    max-height:      300px;
+    margin:          0 auto;
+    gap:             10px;
+}
+
+.card-image {
+    width:         100%;
+    max-width:     300px;
+    max-height:    170px;
+    aspect-ratio:  auto;
+    object-fit:    cover;
+    border-radius: 10px;
+}
+
+.modal-header {
+    color: goldenrod;
+    background-color: #191637;
+}
+
+.modal-body {
+    background-color: #191637;
+    color: #fff;
+}
+
+.modal-footer {
+    background-color: #191637;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        align-items:    center;
+    }
+
+    .banner {
+        background-color:  #030116;
+        background-image:    url("../img/fundo.png");
+        background-size:     cover;
+        background-position: center;
+        background-repeat:   no-repeat;
+        min-width:           100vw;
+        min-height:          100vh;
+        display:             flex;
+        align-items:         center;
+        justify-content:     flex-start;
+        padding-left:        5%;
+    }
+
+    .text-box {
+        display:     block; 
+        max-height:  70px; 
+        overflow-y:  auto; 
+        padding:     5px; 
+        word-wrap:   break-word; 
+        white-space: pre-wrap; 
+        color:    #000;
+    }
+
+    .card-wrapper {
+        padding: 10px;
+    }
+
+    .card-list .card-item .card-link {
+        width: 100%;
+    }
+
+    .card-image {
+        max-width:  100%;
+        max-height: 200px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
