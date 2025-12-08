@@ -3,7 +3,7 @@
 
 class Database {
     // Altere para as suas credenciais reais
-    private $host = "";
+    private $host = "40.160.64.65";
     private $db_name = "talentos_tecnoif"; 
     private $username = "talentos_tecnoif";
     private $password = "9988110958Pl.";
