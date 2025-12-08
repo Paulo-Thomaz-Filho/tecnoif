@@ -1,0 +1,420 @@
+:root {
+    /* PALETA DE CORES NEON (Base do estilo Spy Scroll) */
+    --primary-background-color:   #222;
+    --secondary-background-color: #f4f4f4;
+    --background-login:           #4f4f4fea; /* Fundo login com transparência */
+    --primary-text-color:         #f7eaff; /* rosa/Branco Principal */
+    --secondary-text-color:       #d4a7f2; /* rosa Secundário */
+    --links-and-buttons:          #ffae00; /* dourado (Usado nos links da nav e bordas) */
+    --secondary-link-and-buttons: #45006d; /* Roxo (Usado no hover e linha ativa) */
+    --highlight:                  #FF9800; /* Laranja (Usado no hover do botão) */
+    --nav-color:                  #4c4c4c;
+    --background-black:           #171717;
+    --fonte-principal:            'Adamina', sans-serif;    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+html {
+    height: auto;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-background-color);
+    background-image: url(../images/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: var(--primary-text-color);
+}
+
+@media (max-width:1000px) {
+        
+    html{
+        height: 100%;
+    }
+
+    body {
+        background-attachment: scroll; 
+    }
+}
+
+/*===== ADMIN =====*/
+.admin {
+    padding: auto;
+    height: 75dvh;
+    width: 75dvw;
+    border-radius: 15px;
+    background-color: var(--background-login);
+    position: relative;
+    top: 50%;
+    transform: translateY(25%);
+    box-shadow: 0 0 20px rgba(183, 0, 255, 0.232); /* Sombra Neon */
+    padding: 30px;
+    overflow: auto; /*overflow*/
+    
+}
+
+/*===== MODAL ADMIN =====*/
+.modal-dialog {
+    max-width: 700px; 
+}
+
+.modal-content {
+    max-height: 80vh; 
+    overflow-y: auto; 
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 2px solid #05008b;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#conteudo-mensagem {
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ===== LOGIN =====*/
+.login {
+    padding: auto;
+    height: 60dvh;
+    width: 60dvw;
+    border-radius: 15px;
+    background-color: var(--background-login);
+    position: relative;
+    top: 50%;
+    transform: translateY(40%);
+    box-shadow: 0 0 20px rgba(183, 0, 255, 0.232); /* Sombra Neon */
+    padding: 30px;
+}
+
+main.login {
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid var(--links-and-buttons);
+
+}
+/* ===== NAVBAR ===== */
+.c {    
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Garante que fique acima de outros elementos do Bootstrap */
+    background-color: transparent !important; /* Inicialmente transparente */
+    transition: background-color 0.5s ease-in-out;
+}
+
+nav .nav-link {
+    margin-right: 15px;
+    font-size: 18px;
+    color: var(--links-and-buttons) !important; /* Ciano padrão */
+    text-decoration: none;
+    transition: 0.5s;
+    position: relative;
+}
+
+/* Efeito de Link Ativo (Linha Sublinhada) */
+.nav-link.active-spy::after,
+nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--secondary-link-and-buttons); /* Roxo - Linha Ativa */
+    transition: width 0.3s ease;
+}
+
+nav .nav-link:hover {
+    color: var(--secondary-text-color) !important; /* Roxo no hover */
+    text-decoration: none;
+}
+
+/* Fundo com Blur ao rolar */
+.navbar.scrolled {
+    background-color: rgba(46, 46, 46, 0.6) !important; /* Fundo semi-transparente */
+    backdrop-filter: blur(5px);
+}
+
+/* alinhar o botão e os itens do menu a esquerda no mobile */
+@media (max-width: 991px) {
+    .c {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+
+/* ===== TÍTULOS GERAIS ===== */
+h2 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--links-and-buttons); /* Ciano */
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 10px;
+    color: var(--secondary-text-color); /* Azul claro */
+}
+
+/* ===== SEÇÃO 1: INÍCIO ===== */
+#main-inicio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== SEÇÃO 2: SOBRE NÓS ===== */
+.main-sobre-nos {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    text-align: left;
+    background-color: var(--primary-background-color);
+    border-bottom: 1px solid #333;
+    color: var(--primary-text-color);
+}
+
+/* Layout Flexbox para desktop */
+@media (min-width: 992px) {
+    .main-sobre-nos {
+        flex-direction: row;
+    }
+    .esquerda-texto {
+        flex: 1;
+        padding-right: 40px;
+    }
+    .direita-imagem {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Ajuste para celular */
+@media (max-width: 991px) {
+    .main-sobre-nos {
+        flex-direction: column-reverse;
+    }
+    .direita-imagem {
+        margin-bottom: 30px;
+    }
+}
+
+.img-sobre-nos img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 128, 0, 0.3); /* Sombra Ciano */
+    border: 2px solid var(--links-and-buttons);
+}
+
+.valores ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.valores ul li::before {
+    content: "➤"; 
+    color: var(--links-and-buttons);
+    margin-right: 8px;
+}
+
+/* ===== SEÇÃO 3: NOSSA EQUIPE (CARROSSEL) ===== */
+.main-nossa-equipe {
+    background-color: var(--background-black);
+    padding: 80px 15px;
+    text-align: center;
+}
+
+.c-nossa-equipe {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--primary-background-color);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(5); /* Inverte a cor para branco */
+
+}
+
+/* ===== SEÇÃO 4: NOSSOS SERVIÇOS ===== */
+.main-nossos-servicos {
+    padding: 80px 15px;
+    background-color: var(--primary-background-color);
+}
+
+.main-nossos-servicos button {
+    width: 100%;
+    padding: 0;
+    padding: 5px;
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.c-nossos-servicos h2 {
+    text-align: center;
+}
+
+.servicos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servico-item {
+    background-color: #252525;
+    border: 1px solid #444;
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.servico-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--links-and-buttons); /* Borda Ciano no hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* ===== SEÇÃO 5: FORMULÁRIO ===== */
+.main-mande-suas-ideias {
+    margin: 50px 0 0 0 ;
+    padding: 80px 15px;
+    background-color: var(--background-black);
+    display: flex;
+    justify-content: center;
+}
+
+.c-mande-suas-ideias {
+    width: 100%;
+    max-width: 700px;
+    background-color: var(--nav-color);
+    padding: 40px;
+    border-radius: 15px;
+    border-left: 5px solid var(--links-and-buttons);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.c-mande-suas-ideias h2 {
+    text-align: center;
+}
+
+/* Customização dos inputs */
+.form-control {
+    background-color: var(--secondary-background-color);
+    border: 1px solid #444;
+    color: var(--background-black); /* Texto preto no input claro */
+    transition: 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: var(--secondary-link-and-buttons);
+    color: var(--background-black);
+    box-shadow: 0 0 5px var(--secondary-link-and-buttons);
+}
+
+.form-label {
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+}
+
+/* Botão estilo referência */
+.btn-primary {
+    background-color: var(--secondary-link-and-buttons); /* Roxo */
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--highlight); /* Laranja no hover */
+    transform: scale(1.05);
+    color: white;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-black);
+    border-top: 1px solid #333;
+    color: var(--primary-text-color);
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* ===== ACESSIBILIDADE ===== */
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* ===== MODAL ===== */
+.modal-content {
+    background-color: var(--nav-color);
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    border: 2px solid var(--links-and-buttons);
+}
+.modal {
+    color: var(--secondary-text-color);
+}
+.modal p {
+    color: var(--primary-text-color);
+}
+
