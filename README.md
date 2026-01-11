@@ -1,4 +1,3 @@
-```markdown
 # 🚀 TecnoIF - Soluções Tecnológicas
 
 > Uma plataforma institucional com painel administrativo para gestão de contatos e serviços.
