@@ -3,10 +3,10 @@
 
 class Database {
     // Altere para as suas credenciais reais
-    private $host = "40.160.64.65";
-    private $db_name = "talentos_tecnoif"; 
-    private $username = "talentos_tecnoif";
-    private $password = "9988110958Pl.";
+    private $host = "localhost";
+    private $db_name = "tecnoif"; 
+    private $username = "root";
+    private $password = "";
     public $conn;
 
     public function getConnection() {
