@@ -80,6 +80,7 @@ CREATE TABLE mensagem (
 -- Inserir usuário admin padrão (Senha: 123456)
 INSERT INTO admin (nome, senha) VALUES ('admin', '$2y$10$Bib1p8W.I/s4.S6tXyqKZu.sZl.sZl.sZl.sZl.sZl.sZl');
 
+```
 📂 Estrutura de Pastas (MVC)
 /
 ├── app/
