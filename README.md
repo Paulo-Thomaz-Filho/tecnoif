@@ -1,11 +1,3 @@
-Excelente! Agora que tenho a visão completa (Front-end e Back-end), posso criar um `README.md` profissional para o **TecnoIF**.
-
-Analisei sua estrutura Back-end e notei que você utilizou uma arquitetura **MVC (Model-View-Controller)** feita "na mão" (sem frameworks pesados), o que é ótimo para portfólio, pois demonstra conhecimento dos fundamentos do PHP e Orientação a Objetos.
-
-Abaixo, criei o conteúdo do arquivo `README.md`. Você pode copiar o código e criar o arquivo na raiz do seu projeto.
-
----
-
 ### Arquivo: `README.md`
 
 ```markdown
@@ -157,11 +149,6 @@ private $password = "";     // Sua senha local
 Este projeto está sob a licença MIT.
 
 ```
-
----
-
-### ⚠️ Observação Importante sobre Segurança
-No arquivo `Database.php` que você me enviou, as credenciais do banco de dados (Host IP `40.160...`, usuário e senha) estão expostas.
 
 **Antes de subir para o GitHub:**
 1.  **Não suba a senha real:** Altere o arquivo `Database.php` para usar credenciais genéricas (ex: "root", "senha_aqui") ou use variáveis de ambiente. Se você subir essa senha real para um repositório público (ou até privado), bots podem encontrar e tentar acessar seu banco.
