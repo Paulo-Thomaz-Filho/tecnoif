@@ -144,7 +144,3 @@ private $password = "";     // Sua senha local
 ## 📝 Licença
 
 Este projeto está sob a licença MIT.
-
-```
-
-```
