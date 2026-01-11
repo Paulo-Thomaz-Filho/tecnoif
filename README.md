@@ -80,7 +80,7 @@ CREATE TABLE mensagem (
 -- Inserir usuário admin padrão (Senha: 123456)
 INSERT INTO admin (nome, senha) VALUES ('admin', '$2y$10$Bib1p8W.I/s4.S6tXyqKZu.sZl.sZl.sZl.sZl.sZl.sZl');
 
-```
+```folder
 📂 Estrutura de Pastas (MVC)
 /
 ├── app/
@@ -93,6 +93,9 @@ INSERT INTO admin (nome, senha) VALUES ('admin', '$2y$10$Bib1p8W.I/s4.S6tXyqKZu.
 │   └── views/        # Arquivos de visualização (HTML/PHP)
 ├── .htaccess         # Redirecionamento de rotas
 └── index.php         # Ponto de entrada da aplicação
+
+```
+
 👥 Autores
 <table> <tr> <td align="center"><a href="https://www.google.com/search?q=https://github.com/Paulo-Thomaz-Filho"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Paulo Thomaz</b></sub></a><br />Gerente de Projetos & Dev</td> <td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Eduardo Nogueira</b></sub></a><br />Front-End</td> <td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Henrico Santos</b></sub></a><br />Back-End</td> <td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Jhonny Sancho</b></sub></a><br />Designer UX/UI</td> <td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>João Marcos</b></sub></a><br />Front-End</td> </tr> </table>
 
