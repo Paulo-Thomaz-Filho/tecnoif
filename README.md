@@ -1,3 +1,4 @@
+```markdown
 # 🚀 TecnoIF - Soluções Tecnológicas
 
 > Uma plataforma institucional com painel administrativo para gestão de contatos e serviços.
@@ -80,8 +81,37 @@ CREATE TABLE mensagem (
 -- Inserir usuário admin padrão (Senha: 123456)
 INSERT INTO admin (nome, senha) VALUES ('admin', '$2y$10$Bib1p8W.I/s4.S6tXyqKZu.sZl.sZl.sZl.sZl.sZl.sZl');
 
-```folder
-📂 Estrutura de Pastas (MVC)
+```
+
+### 2. Configuração da Conexão
+
+1. Navegue até o arquivo `app/database/Database.php`.
+2. Altere as credenciais para o seu ambiente local (nunca suba senhas reais para o GitHub):
+
+```php
+private $host = "localhost";
+private $db_name = "talentos_tecnoif";
+private $username = "root"; // Seu usuário local
+private $password = "";     // Sua senha local
+
+```
+
+### 3. Executando
+
+1. Coloque a pasta do projeto dentro do diretório do seu servidor (ex: `htdocs` no XAMPP).
+2. Acesse no navegador: `http://localhost/nome-da-pasta/`.
+3. Para acessar o painel administrativo:
+* URL: `/login`
+* **Usuário:** `admin`
+* **Senha:** `123456`
+
+
+
+---
+
+## 📂 Estrutura de Pastas (MVC)
+
+```
 /
 ├── app/
 │   ├── controllers/  # Lógica de controle (Login, Mensagens, Enviar)
@@ -96,8 +126,26 @@ INSERT INTO admin (nome, senha) VALUES ('admin', '$2y$10$Bib1p8W.I/s4.S6tXyqKZu.
 
 ```
 
-👥 Autores
-<table> <tr> <td align="center"><a href="https://www.google.com/search?q=https://github.com/Paulo-Thomaz-Filho"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Paulo Thomaz</b></sub></a><br />Gerente de Projetos & Dev</td> <td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Eduardo Nogueira</b></sub></a><br />Front-End</td> <td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Henrico Santos</b></sub></a><br />Back-End</td> <td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Jhonny Sancho</b></sub></a><br />Designer UX/UI</td> <td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>João Marcos</b></sub></a><br />Front-End</td> </tr> </table>
+---
 
-📝 Licença
+## 👥 Autores
+
+<table>
+<tr>
+<td align="center"><a href="https://www.google.com/search?q=https://github.com/Paulo-Thomaz-Filho"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Paulo Thomaz</b></sub></a><br />Gerente de Projetos & Dev</td>
+<td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Eduardo Nogueira</b></sub></a><br />Front-End</td>
+<td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Henrico Santos</b></sub></a><br />Back-End</td>
+<td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>Jhonny Sancho</b></sub></a><br />Designer UX/UI</td>
+<td align="center"><a href="#"><img style="border-radius: 50%;" src="https://www.google.com/search?q=https://avatars.githubusercontent.com/u/placeholder%3Fs%3D100" width="100px;" alt=""/><br /><sub><b>João Marcos</b></sub></a><br />Front-End</td>
+</tr>
+</table>
+
+---
+
+## 📝 Licença
+
 Este projeto está sob a licença MIT.
+
+```
+
+```
